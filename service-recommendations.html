@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Service Recommendations | Mac PC Rescue Project Hub</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.rec-hero{padding-top:72px;padding-bottom:35px}
+.rec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rec-card{padding:24px;border:1px solid #1b3b53;border-radius:18px;background:linear-gradient(145deg,#0d1d2d,#08131f)}
+.rec-card h3{font-size:21px;margin:10px 0 6px}.rec-card p{color:#839bad;font-size:11px}
+.cost{font-size:28px;font-weight:800;color:#43ddff;margin:8px 0}.cost small{font-size:10px;color:#829bad;font-weight:normal}
+.rec-list{margin:14px 0 0;padding-left:18px;color:#8da5b8;font-size:11px}.rec-list li{margin:7px 0}
+.free{color:#4ae2a8}.flowline{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:15px}
+.flowline span{padding:8px 10px;border:1px solid #1b4058;border-radius:8px;background:#071522;font-size:9px}.flowline b{color:#3c7998}
+.total{padding:27px;border:1px solid #28536d;border-radius:18px;background:radial-gradient(circle at 0 0,#123047,transparent 45%),#091724}
+.total h3{font-size:24px;margin:7px 0}.total p{color:#8da5b8;font-size:11px}
+.note{padding:18px;border:1px dashed #2b5068;border-radius:13px;background:#07131f;color:#7f98ab;font-size:10px}
+@media(max-width:700px){.rec-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="owner"><b>Potter Service</b> — <strong>Mac PC Rescue Project Hub</strong> • Project development & preview site</div>
+<div class="nav">
+<a class="brand" href="index.html">Mac PC Rescue Project Hub<small>Managed through Potter Service</small></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Project</a>
+<a href="components.html">Project Areas</a>
+<a href="roadmap.html">Roadmap</a>
+<a href="service-recommendations.html">Recommendations</a>
+<a href="structure.html">Structure</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="wrap rec-hero">
+<span class="eyebrow">POTTER SERVICE RECOMMENDATIONS</span>
+<h1 style="font-size:52px;line-height:1.03;letter-spacing:-.05em;margin:10px 0">Keeping the Mac PC Rescue web services <span style="color:#43ddff">useful and low-cost.</span></h1>
+<p class="lead">These are Potter Service recommendations for services that could support the Mac PC Rescue website and related project while keeping recurring costs as low as practical. Mac PC Rescue can choose different providers at any time.</p>
+</section>
+
+<section class="wrap section">
+<div class="rec-grid">
+<article class="rec-card">
+<span class="tag">DOMAIN</span>
+<h3>Domain Registration</h3>
+<div class="cost">≈ $20 <small>/ year estimated</small></div>
+<p>The domain can be purchased and kept with whichever domain registrar or hosting provider Mac PC Rescue prefers. The domain does not have to be purchased from the same company that hosts the website.</p>
+<ul class="rec-list">
+<li>If the website moves to a different hosting provider, the domain can normally remain with its existing registrar.</li>
+<li>The DNS records would simply need to be updated to point the domain to the new hosting provider.</li>
+<li>Actual registration and renewal cost depends on the domain extension and registrar.</li>
+<li>Premium domains can cost substantially more than a normal domain registration.</li>
+</ul>
+<div class="flowline"><span>Domain Registrar</span><b>→ DNS →</b><span>Selected Web Host</span></div>
+</article>
+
+<article class="rec-card">
+<span class="tag">WEB HOSTING</span>
+<h3>IONOS Web Hosting Plus</h3>
+<p>For the service-portal concept, Potter Service currently recommends considering IONOS Web Hosting Plus because the plan includes the standard web-hosting, PHP, subdomain, and MariaDB capabilities that fit the proposed project.</p>
+<p>This is a recommendation rather than a requirement. Hosting can be changed later by moving the website/application files and databases and updating the domain's DNS.</p>
+<a class="btn" href="portal-concept/hosting.html">View Detailed Hosting Recommendation</a>
+</article>
+
+<article class="rec-card">
+<span class="tag">DNS + SECURITY</span>
+<h3>Cloudflare Free</h3>
+<div class="cost free">$0 <small>/ month for the Free plan</small></div>
+<p>Potter Service recommends considering Cloudflare in front of the website. For the current project, the Free plan should cover many of the basic DNS, delivery, SSL, and DDoS-protection needs expected for the public website.</p>
+<ul class="rec-list">
+<li>DNS management</li>
+<li>CDN / content delivery features</li>
+<li>Universal SSL availability</li>
+<li>Unmetered DDoS protection on the Free plan</li>
+<li>Additional security controls can be considered later if the project grows</li>
+</ul>
+<p><b>Important:</b> Cloudflare adds a useful security layer but does not make a website immune to every type of attack. Secure application code, updates, backups, access controls, and host security are still necessary.</p>
+</article>
+
+<article class="rec-card">
+<span class="tag">TRAFFIC ANALYTICS</span>
+<h3>Google Analytics</h3>
+<div class="cost free">$0 <small>for the standard service</small></div>
+<p>Potter Service recommends Google Analytics for understanding how visitors use the Mac PC Rescue website.</p>
+<ul class="rec-list">
+<li>Website traffic and usage</li>
+<li>Real-time activity reporting</li>
+<li>Traffic sources and acquisition</li>
+<li>Pages and events visitors interact with</li>
+<li>Audience and demographic reporting where available and permitted</li>
+</ul>
+<p>Analytics configuration should be reviewed for applicable privacy, consent, and data-collection requirements before deployment.</p>
+</article>
+
+<article class="rec-card">
+<span class="tag">GOOGLE SEARCH</span>
+<h3>Google Search Console</h3>
+<div class="cost free">$0 <small>/ free Google service</small></div>
+<p>Search Console is recommended for monitoring and improving the website's presence in Google Search. It does not guarantee a particular search ranking, but it provides important tools for helping Google discover and understand the site.</p>
+<ul class="rec-list">
+<li>Confirm that Google can find and crawl the website</li>
+<li>Submit and monitor website indexing</li>
+<li>Request re-indexing after important updates</li>
+<li>See search queries and Google Search traffic</li>
+<li>Identify indexing and other search-related problems</li>
+</ul>
+<a class="btn primary" href="https://search.google.com/search-console">Open Google Search Console</a>
+</article>
+
+<article class="rec-card">
+<span class="tag">COST STRATEGY</span>
+<h3>Use free services where they make sense.</h3>
+<p>The general recommendation is to avoid paying for additional services unless the project actually needs them. A domain and web hosting may be the primary recurring costs, while Cloudflare, Google Analytics, and Google Search Console can initially provide useful supporting capabilities at no additional service cost.</p>
+<p>If traffic, security requirements, storage, email, or application requirements grow later, paid services can be evaluated at that time instead of adding unnecessary overhead now.</p>
+</article>
+</div>
+</section>
+
+<section class="wrap section">
+<div class="total">
+<span class="eyebrow">LOW-COST APPROACH</span>
+<h3>Start with what the project actually needs.</h3>
+<p>A practical starting setup could consist of the selected domain, suitable web hosting, Cloudflare Free, Google Analytics, and Google Search Console. The domain remains portable between hosts, and additional paid services can be added later only when there is a clear need.</p>
+<div class="flowline"><span>Domain</span><b>→</b><span>Cloudflare / DNS</span><b>→</b><span>Web Hosting</span><b>+</b><span>Google Analytics</span><b>+</b><span>Search Console</span></div>
+</div>
+</section>
+
+<section class="wrap section">
+<div class="note"><strong style="color:#fff">Recommendation disclaimer:</strong> These are Potter Service project recommendations intended to help Mac PC Rescue evaluate a practical, lower-cost setup. Providers, pricing, plan limits, features, domain pricing, and project requirements can change. Current terms and technical requirements should be checked before purchasing or deploying any service.</div>
+</section>
+</main>
+<footer>Potter Service • Mac PC Rescue Project Hub • Service recommendations</footer>
+</body>
+</html>

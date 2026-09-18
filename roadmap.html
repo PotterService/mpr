@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roadmap | MPR Project Hub</title>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.update-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}
+.update-list{position:relative;margin-left:12px;padding-left:28px;border-left:1px solid #24516b}
+.update-entry{position:relative;margin-bottom:14px;padding:20px 22px;border:1px solid #1b3b53;border-radius:15px;background:linear-gradient(145deg,#0d1d2d,#08131f)}
+.update-entry:before{content:"";position:absolute;left:-35px;top:25px;width:12px;height:12px;border-radius:50%;background:#38d9ff;box-shadow:0 0 18px #38d9ff88}
+.update-meta{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:8px}
+.update-date{font-size:9px;font-weight:800;color:#8ca7ba;letter-spacing:.08em}
+.update-entry h3{margin:5px 0;font-size:18px}
+.update-entry p{margin:5px 0 0;color:#839bad;font-size:11px}
+.update-help{margin-top:18px;padding:18px;border:1px dashed #28506b;border-radius:13px;color:#7f98ab;font-size:10px;background:#07131f}
+@media(max-width:600px){.update-head{display:block}.update-list{margin-left:6px;padding-left:22px}.update-entry:before{left:-29px}}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="owner"><b>Potter Service</b> — <strong>Mac PC Rescue Project Hub</strong> • Project development & preview site</div>
+<div class="nav">
+<a class="brand" href="index.html">Mac PC Rescue Project Hub<small>Managed through Potter Service</small></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Project</a>
+<a href="components.html">Project Areas</a>
+<a href="roadmap.html">Roadmap</a>
+<a href="service-recommendations.html">Recommendations</a><a href="structure.html">Structure</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="wrap pagehero">
+<span class="eyebrow">PROJECT ROADMAP</span>
+<h1>A proposed path from <span>idea to system.</span></h1>
+<p class="lead">This roadmap is a planning guide rather than a fixed development commitment. The order can change based on Mac PC Rescue feedback, project needs, and technical requirements.</p>
+</section>
+
+<section class="wrap section">
+<span class="eyebrow">DEVELOPMENT PLAN</span>
+<h2>Proposed <span>development stages.</span></h2>
+<div class="steps">
+<div class="step"><b>01 • Project & Website</b><p>Organize the project, public website, concept information, hosting approach, branding, and requirements.</p></div>
+<div class="step"><b>02 • Database Foundation</b><p>Plan SQL structure, authentication, settings, service catalog, customers, devices, and ticket foundations.</p></div>
+<div class="step"><b>03 • Admin Portal</b><p>Develop the staff side for tickets, queue, diagnostics, billing, customers, devices, settings, and permissions.</p></div>
+<div class="step"><b>04 • Client Portal</b><p>Add secure customer-facing status, appropriate updates, invoice information, and payment capabilities.</p></div>
+</div>
+<div class="steps" style="margin-top:10px">
+<div class="step"><b>05 • Website Connection</b><p>Connect public service requests to the backend so staff can review and convert inquiries into customers and tickets.</p></div>
+<div class="step"><b>06 • Optional Kiosk</b><p>Add the in-store customer experience if Mac PC Rescue chooses to include it.</p></div>
+<div class="step"><b>07 • Integrations</b><p>Add approved payment, printing, and other integrations after core workflows are stable.</p></div>
+<div class="step"><b>08 • Future Expansion</b><p>Possible notifications, mobile/PWA tools, status-only experience, and other approved additions.</p></div>
+</div>
+</section>
+
+<section class="wrap section" id="updates">
+<div class="update-head">
+<div>
+<span class="eyebrow">PROJECT CHANGE LOG</span>
+<h2 style="margin-bottom:0">Project <span>Updates.</span></h2>
+</div>
+<p style="max-width:480px;color:#839bad;font-size:11px">A dated history of changes, additions, milestones, and other work completed throughout the Mac PC Rescue project.</p>
+</div>
+
+<div class="update-list">
+<article class="update-entry">
+<div class="update-meta">
+<span class="tag ready">WEBSITE</span>
+<span class="update-date">SEPTEMBER 18, 2026</span>
+</div>
+<h3>Main Website — Logo Updated</h3>
+<p>Updated the logo used on the main Mac PC Rescue website to the new MPR logo.</p>
+</article>
+</div>
+
+<div class="update-help">
+<strong style="color:#fff">Adding future updates:</strong>
+Duplicate an update entry above, change its category, date, title, and description, then place the newest update at the top of the list. Suggested categories include Website, Project, Portal Concept, Backend, Admin, Client, and Kiosk.
+</div>
+</section>
+
+<section class="wrap section">
+<div class="notice"><strong>Important:</strong> The project should remain configurable. Shop services, categories, pricing, ticket types, statuses, and other operational settings should be controlled through Admin settings where practical rather than requiring code edits.</div>
+</section>
+</main>
+
+<footer>Potter Service • Mac PC Rescue Project Hub • Informational project-development and preview site</footer>
+</body>
+</html>
