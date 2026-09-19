@@ -16,6 +16,18 @@
 .update-entry p{margin:5px 0 0;color:#839bad;font-size:11px}
 .update-help{margin-top:18px;padding:18px;border:1px dashed #28506b;border-radius:13px;color:#7f98ab;font-size:10px;background:#07131f}
 @media(max-width:600px){.update-head{display:block}.update-list{margin-left:6px;padding-left:22px}.update-entry:before{left:-29px}}
+
+.phase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.phase-card{padding:20px 22px;border:1px solid #1b3b53;border-radius:15px;background:linear-gradient(145deg,#0d1d2d,#08131f)}
+.phase-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
+.phase-badge{display:inline-block;padding:5px 8px;border:1px solid #2a607d;border-radius:999px;color:#38d9ff;font-size:9px;font-weight:900;letter-spacing:.08em}
+.phase-date{margin-left:8px;color:#8ca7ba;font-size:9px;font-weight:800}
+.phase-status{color:#71e6aa;font-size:9px;font-weight:900;letter-spacing:.08em}
+.phase-card h3{margin:4px 0 10px;font-size:17px}
+.phase-card ul{margin:0;padding-left:18px;color:#839bad;font-size:11px;line-height:1.65}
+.phase-card li+li{margin-top:5px}
+@media(max-width:800px){.phase-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -36,8 +48,8 @@
 <main>
 <section class="wrap pagehero">
 <span class="eyebrow">PROJECT ROADMAP</span>
-<h1>A proposed path from <span>idea to system.</span></h1>
-<p class="lead">This roadmap is a planning guide rather than a fixed development commitment. The order can change based on Mac PC Rescue feedback, project needs, and technical requirements.</p>
+<h1>From foundation to <span>full service system.</span></h1>
+<p class="lead">This roadmap combines the original development plan with the completed MPR Service System phase history. It documents the system&rsquo;s growth from the Phase 3 database foundation through Phase 14.0 returns and refunds.</p>
 </section>
 
 <section class="wrap section">
@@ -57,6 +69,261 @@
 </div>
 </section>
 
+
+<section class="wrap section" id="completed-phases">
+  <div class="update-head">
+    <div>
+      <span class="eyebrow">COMPLETED DEVELOPMENT</span>
+      <h2 style="margin-bottom:0">MPR Service System <span>Phase History.</span></h2>
+    </div>
+    <p style="max-width:500px;color:#839bad;font-size:11px">A consolidated history of the completed MPR Service System phases, sub-phases, and hotfixes from Phase 3 through Phase 14.0.</p>
+  </div>
+  <div class="phase-grid">
+    
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">PHASE 3</span><span class="phase-date">9/18/2026</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 3 — Database Connection / Update-Safe Foundation</h3>
+  <ul><li>Live database credentials moved to config/database.local.php so normal uploads do not overwrite a working connection.</li><li>Setup can create/repair the database connection and recognize an existing administrator.</li><li>Established employee login/quick access plus Admin, Front Desk, Technician, Shop Display, Kiosk, Client Status, Website API, and Setup foundations.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">PHASE 4</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4 — Core Service Operations</h3>
+  <ul><li>Added Front Desk dashboard, customer creation/search, customer profiles and device management.</li><li>Added ticket creation with automatic MPR ticket numbers, ticket lists/details, status timeline updates, charges and balance recalculation.</li><li>Added appointments/check-in, Discord triggers, technician repair queue, service/category/default-price catalog, and core audit events.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 4.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4.1 — Ticket Intake Upgrade</h3>
+  <ul><li>Fixed blank Status and Ticket Type dropdowns with a safe Admin database updater.</li><li>Added Returning Customer and New Customer workflows, phone lookup, existing/new device selection, encrypted device PIN/password entry, and a printable blank intake form.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">HOTFIX 4.1.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4.1.1 — Database Compatibility Hotfix</h3>
+  <ul><li>Made the Phase 4.1 updater inspect live tables before changes, safely adding missing status/device fields without wiping existing data.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">HOTFIX 4.1.2</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4.1.2 — MariaDB Updater Hotfix</h3>
+  <ul><li>Fixed MariaDB SHOW COLUMNS placeholder syntax while keeping the update non-destructive.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 4.1.3</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4.1.3 — Device Intake Improvement</h3>
+  <ul><li>Device dropdown always includes New Device; returning customers show saved devices.</li><li>Existing device selection auto-fills device information and saved encrypted credentials for authorized staff.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 4.1.4</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4.1.4 — Returning Customer Search</h3>
+  <ul><li>Expanded customer lookup to first/last/full name, email, full phone, and partial phone; phone matching ignores common formatting.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">HOTFIX 4.1.5</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 4.1.5 — Create Ticket Hotfix</h3>
+  <ul><li>Fixed the ticket timeline SQL parameter-count error that occurred when creating a ticket.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">PHASE 5</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 5 — Administration &amp; Technician Expansion</h3>
+  <ul><li>Added administration dashboard, full ticket/customer management, employee accounts/roles, ticket type/status management, and safe historical deactivation.</li><li>Expanded technician repair workflow with status changes, notes, diagnostics, estimates, approval-needed flags, timeline, and credential viewing.</li><li>Customer profiles became editable and new devices can store encrypted PIN/passwords.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">PHASE 6</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 6 — Repair Workflow &amp; Billing</h3>
+  <ul><li>Added ticket workflow editing, technician assignment, repair queues, approval/decline timeline events, configured services and custom charges.</li><li>Added configurable sales tax, automatic subtotal/tax/total/payment/credit/balance calculations, payment recording, work orders and receipts.</li><li>Admin dashboard gained Ready for Pickup, Unpaid Balances and Overdue Estimates.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 6.2</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 6.2 — Financial Dashboard &amp; Shared Repair Queue</h3>
+  <ul><li>All technicians see active repairs; General employees can access Front Desk and Technician areas.</li><li>Added employee removal with historical record preservation.</li><li>Added revenue dashboards/reports, unpaid balances, improved customer financial/profile views, device profiles/history, and the General role.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">HOTFIX 6.2.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 6.2.1 — Financial Reports Hotfix</h3>
+  <ul><li>Fixed HTTP 500 errors in financial reports by correcting aliased SQL date expressions.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">PHASE 7</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 7 — Client Portal, Kiosk &amp; Shop Display</h3>
+  <ul><li>Added ticket-number + phone client verification with safe customer-facing repair, invoice, payment, balance, timeline and warranty information.</li><li>Added kiosk appointment check-in, walk-in registration, repair status lookup, Discord assistance notification and idle reset.</li><li>Added configurable privacy shop display and Customer-Facing Settings.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 7.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 7.1 — Appointment / Kiosk Queue</h3>
+  <ul><li>Kiosk check-ins automatically enter the employee appointment queue in oldest-first order.</li><li>Employees can manually check in and complete appointments while preserving appointment history; customer profiles gained appointment history.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 7.2</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 7.2 — Front Desk Live Queue &amp; Time Format</h3>
+  <ul><li>Added Checked-In Queue counter and live queue page with 30-second refresh.</li><li>Standardized current user-facing operational times to 12-hour AM/PM formatting.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 8.0</span><span class="phase-date">9/18/2026 — 10:48 PM</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 8.0 — Front Desk Today &amp; Appointment Management</h3>
+  <ul><li>Added live Front Desk Today screen with checked-in queue, today&#x27;s appointments, ready/completed repairs and quick links.</li><li>Added Today/Upcoming/History appointment views with edit, reschedule, check-in, complete, cancel and no-show actions while preserving history.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 8.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 8.1 — Credit Ledger, Communications &amp; Approvals</h3>
+  <ul><li>Converted customer credit into a true ledger with issue/apply/history support.</li><li>Added customer communication history and ticket-linked communications.</li><li>Added customer approval requests, Approved/Declined decisions, audit/history preservation and optional Discord events.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 8.2</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 8.2 — Discord Workflow &amp; Daily Reports</h3>
+  <ul><li>Added global/per-event Discord controls for tickets, requests, check-ins, appointments, approvals, repairs, payments and other workflow events.</li><li>Added configurable Start of Day and End of Day reports, daily-record messaging, internal workflow alerts and scheduled report delivery.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 9.0</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 9.0 — Global Search &amp; Workflow Alerts</h3>
+  <ul><li>Added global search across customers, tickets, devices and appointments while excluding device credentials.</li><li>Added configurable Overdue and Due Soon repair indicators across Front Desk, Alerts, Tickets, Tech queue and Admin.</li><li>Improved ticket list/detail workflow visibility for approvals, balances, updates and customer contact.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 9.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 9.1 — Granular Employee Permissions &amp; Security</h3>
+  <ul><li>Added per-employee permissions for customer, ticket, credential, billing, payment, credit, approval, communication, diagnostics, deletion and reporting actions.</li><li>Device credentials now require reveal permission and credential reveals are audit logged.</li><li>Improved auditing and safe ticket deletion around approval, communication and credit references.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 10.0</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 10.0 — Repair Center, Diagnostics, Warranty &amp; Print Center</h3>
+  <ul><li>Added structured diagnostics with configurable categories, findings, repair recommendations, parts, results and customer-safe summaries.</li><li>Added repair completion checklist and configurable warranty workflow/history.</li><li>Added printable intake, work order, diagnostic report, receipt, completion summary and warranty documents with configurable business/document wording.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 10.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 10.1 — Pickup &amp; Checkout</h3>
+  <ul><li>Added Ready for Pickup queue and guided checkout with balance, credit, completion checklist and warranty review.</li><li>Added configurable Ready/Picked Up/Closed status mappings, pickup history/reopen support, pickup Discord/reporting events and Pickup/Checkout permission.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 11.0</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 11.0 — Inventory, Parts, Distributors &amp; Barcodes</h3>
+  <ul><li>Added independent inventory with partial search, stock levels, locations, costs, selling prices and receiving history.</li><li>Added MPR internal Code 39 barcodes, distributor management, supplier listings and optional scan workflows.</li><li>Inventory parts can be added to repair tickets with stock reduction/returns, historical cost/price snapshots, usage history and cost/profit permissions.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 12.0</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 12.0 — Invoices &amp; Sales</h3>
+  <ul><li>Added standalone sales invoices beginning at INV-6483, optional walk-in customers, inventory/barcode sales, custom charges, tax and payments.</li><li>Added printable invoices/receipts, invoice search and inventory sale/return history.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 12.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 12.1 — Quick Sale, Credit &amp; Charge Accounts</h3>
+  <ul><li>Added Front Desk Create Sale shortcut, invoice cancellation with inventory/credit/account reversal, and quick Cash/Card/Other payments.</li><li>Added customer credit use, charge-account ledger, existing-balance warnings/forwarding, and expanded customer invoice/account history.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 12.2</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 12.2 — Sales Dashboard &amp; Customer Accounts</h3>
+  <ul><li>Added sales reporting for daily/weekly/monthly sales, collected payments, payment methods, account charges, credits, tax, inventory cost and estimated gross profit.</li><li>Added central Customer Accounts management, account payments/adjustments, enhanced invoice search and full account history.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">HOTFIX 12.2.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 12.2.1 — Phase 12.2 Updater Hotfix</h3>
+  <ul><li>Fixed the Phase 12.2 updater error caused by attempting to insert permission defaults into nonexistent settings.key/settings.value columns.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 13.0</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 13.0 — Quotes &amp; Estimates</h3>
+  <ul><li>Added customer/walk-in estimates with configured services, custom items/labor and inventory parts without deducting stock during estimating.</li><li>Added estimate statuses, printable estimates, notes, totals, search and conversion of approved estimates to sales invoices.</li><li>Inventory is deducted only when an approved estimate is converted to an invoice.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">HOTFIX 13.0.1</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 13.0.1 — Estimate View Hotfix</h3>
+  <ul><li>Fixed the Estimate View HTTP 500 error by using devices.manufacturer instead of the nonexistent devices.brand column.</li></ul>
+</article>
+<article class="phase-card">
+  <div class="phase-top">
+    <div><span class="phase-badge">UPDATE 14.0</span></div>
+    <span class="phase-status">COMPLETED</span>
+  </div>
+  <h3>Phase 14.0 — Returns &amp; Refunds</h3>
+  <ul><li>Added invoice lookup and partial/full item returns with quantity safeguards and return history.</li><li>Added Original Method, Cash, Card, Store Credit and No Refund choices, optional inventory restocking, RET- return numbers and printable return/refund receipts.</li><li>External card/PayPal reversals remain manual until payment-provider integration is added.</li></ul>
+</article>
+  </div>
+</section>
+
+
 <section class="wrap section" id="updates">
 <div class="update-head">
 <div>
@@ -67,6 +334,16 @@
 </div>
 
 <div class="update-list">
+
+<article class="update-entry">
+<div class="update-meta">
+<span class="tag ready">PROJECT</span>
+<span class="update-date">PHASE 14.0 CURRENT ROADMAP</span>
+</div>
+<h3>MPR Service System — Development History Added</h3>
+<p>Roadmap expanded to document completed development from Phase 3 through Phase 14.0, including sub-phases and hotfixes covering service operations, billing, client/kiosk tools, inventory, sales, estimates, and returns/refunds.</p>
+</article>
+
 <article class="update-entry">
 <div class="update-meta">
 <span class="tag ready">WEBSITE</span>
